@@ -284,13 +284,91 @@
 /*--- For XX Large screens (Ex:- TVs,IMacs...)---*/
 @media(min-width:2048px){
    
+    .imgBanner{
+        max-width: 100%;
+        max-height:100%;      
+        object-fit:contain;
+        border-radius: 3vmin;
+    }
     .bannerLeftImage{
         height:70vmin;
-        width:80vmin;
+        width:75vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .bannerRightText{
         height:70vmin;
-        width:80vmin;
+   
+        width:75vmin;
+    }
+    .imageHolderBanner{
+        height:70vmin;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+ 
+        width:75vmin;
+    }
+    .textHolderBanner{
+        height:80vmin;
+        width:75vmin;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15vmin;
+    
+    }
+    .bannerMainTextBody{
+        font-size: 7.75vmin;
+    }
+    .bannerSpecial{
+        color: rgb(6, 141, 194);
+    }
+    .searchBarBanner{
+      height:5vmin;
+      margin-top: 3vmin;
+      display: flex;
+    }
+    .search{
+        width:40vmin;
+    } 
+    .searchBannerButton{
+        width:15vmin;
+        height:5vmin;
+        padding-left: 2vmin;
+        padding-right:2vmin;
+        font-size:2vmin;
+        border:1px solid white;
+        color:white;
+        background-color: rgb(13, 118, 222);
+    }
+    .search{
+        padding:2vmin;
+        border:1px solid lightgray;
+        color:grey;
+        font-size: 2.15vmin;
+    }
+    .sloganMain{
+        margin-left: 2vmin;
+        font-size: 3.3vmin;
+        color:rgb(42, 154, 198);
+    }
+    .line{
+        height:4px;
+        width:17vmin;
+        background-color: rgb(41, 172, 224)
+    }
+    .subTextBodyBanner{
+        font-size: 2vmin;
+        margin-top: 3vmin;
+    }
+    .imageHolderBanner{
+        height:70vmin;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+ 
+        width:70vmin;
     }
 }
 </style>
