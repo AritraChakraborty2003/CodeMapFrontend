@@ -6,6 +6,22 @@
     <title>The Basic template</title>
 </head>
 <body>
+    <div class="nav-box">
+      <div class="brandTextName">
+           <p class="brandSubTextNAme">Best<span class="textSUbcolor">Kit</span></p>
+      </div>
+      <div class="NavElement">
+        <li class="NavSubElement">Blog</li>
+        <li class="NavSubElement">Quiz</li>
+        <li class="NavSubElement">Event</li>
+      </div>
+      <div class="navButton">
+
+      </div>
+      <div class="navHam">
+        <img src="Hamburger_icon.svg.png" alt="" srcset="" height="20" width="20">
+      </div>
+    </div>
    <div class="banner">
         <div class="bannerLeftImage">
             <div class="imageHolderBanner">
@@ -164,6 +180,55 @@
         object-fit:contain;
         border-radius: 3vmin;
     }
+    
+    .nav-box{
+        /* width : 225vmin ; */
+         height: 13vmin ;  
+        /* border: 2px solid black ; */
+        display: flex;
+        justify-content: space-between ;
+        align-items: center ;
+        flex-wrap: wrap ;
+
+    }
+    .brandTextName{
+        /* height : 3vmin ;  */
+        /* width : 4vmin ;  */
+        /* border: 2px solid black ; */
+        display: flex;
+        text-align: center ;
+        margin-left: 3vmin ;
+
+    }
+    .brandSubTextNAme{
+        font-size: 7vmin ; 
+    }
+    .NavElement {
+        height : 3vmin ;  
+        /* border: 2px solid black ; */
+        display: flex;
+        align-items: center ;
+        flex-direction: row ;
+        display: none ;
+    }
+    .NavSubElement{
+        list-style: none ;
+        padding: 10vmin ;
+        font-size: 2.5vmin ;
+    }
+    .navButton{
+        height : 3vmin ; 
+        width : 4vmin ; 
+        border: 2px solid black ;
+        display: none ;
+    }
+    .textSUbcolor{
+        padding: .5vmin;
+        color:  rgb(6, 141, 194); ;
+    }
+    .navHam{
+        margin-right: 4vmin ;
+    }
  
 }
 /*Tab Screens*/
@@ -178,18 +243,111 @@
    
     @media(max-height:770px) {
               /*For Lenovo Thinkpad(small X390)*/
+              .nav-box{
+        /* width : 225vmin ; */
+         height: 5vmin ;  
+        border: 2px solid black ;
+        display: flex;
+        justify-content: space-between ;
+        align-items: center ;
+        flex-wrap: wrap ;
+
+    }
+    .brandTextName{
+        /* height : 3vmin ;  */
+        /* width : 4vmin ;  */
+        border: 2px solid black ;
+        display: flex;
+        text-align: center ;
+        margin-left: 3vmin ;
+
+    }
+    .brandSubTextNAme{
+        font-size: 3vmin ; 
+    }
+    .NavElement {
+        height : 3vmin ;  
+        border: 2px solid black ;
+        display: flex;
+        align-items: center ;
+        flex-direction: row ;
+    }
+    .NavSubElement{
+        list-style: none ;
+        padding: 10vmin ;
+        font-size: 2.5vmin ;
+    }
+    .navButton{
+        height : 3vmin ; 
+        width : 4vmin ; 
+        border: 2px solid black ;
+    }
+    .navHam{
+        display: none ;
+    }
+    .textSUbcolor{
+        padding: .5vmin;
+        color:  rgb(6, 141, 194); ;
+    }
   
     }
     @media(min-height:771px) {
           /*For macbook(13.5 inch screen)*/
+          .nav-box{
+        /* width : 225vmin ; */
+         height: 5vmin ;  
+        border: 2px solid black ;
+        display: flex;
+        justify-content: space-between ;
+        align-items: center ;
+        flex-wrap: wrap ;
+
+    }
+    .brandTextName{
+        /* height : 3vmin ;  */
+        /* width : 4vmin ;  */
+        border: 2px solid black ;
+        display: flex;
+        text-align: center ;
+        margin-left: 3vmin ;
+
+    }
+    .brandSubTextNAme{
+        font-size: 3vmin ; 
+    }
+    .NavElement {
+        height : 3vmin ;  
+        border: 2px solid black ;
+        display: flex;
+        align-items: center ;
+        flex-direction: row ;
+    }
+    .NavSubElement{
+        list-style: none ;
+        padding: 10vmin ;
+        font-size: 2.5vmin ;
+    }
+    .navButton{
+        height : 3vmin ; 
+        width : 4vmin ; 
+        border: 2px solid black ;
+    }
+     .navHam{
+        display: none ;
+    }
+    .textSUbcolor{
+        padding: .5vmin;
+        color:  rgb(6, 141, 194); ;
     }
      
     }
-
+}
 /*For macbook(13.5inch eg:macbook-air)*/
 /*--- For Mini and medium Laptops(14inch eg: macbook-air) */
 @media(min-width:1281px) and (max-width:1440px){
-   
+    .navHam{
+        display: none ;
+    }
 }
 
 /*-----End for macbook-air sized laptops(14 inch) ----*/
@@ -274,11 +432,59 @@
         font-size: 2vmin;
         margin-top: 3vmin;
     }
+    .nav-box{
+        /* width : 225vmin ; */
+         height: 5vmin ;  
+        border: 2px solid black ;
+        display: flex;
+        justify-content: space-between ;
+        align-items: center ;
+        flex-wrap: wrap ;
+
+    }
+    .brandTextName{
+        /* height : 3vmin ;  */
+        /* width : 4vmin ;  */
+        border: 2px solid black ;
+        display: flex;
+        text-align: center ;
+        margin-left: 3vmin ;
+
+    }
+    .brandSubTextNAme{
+        font-size: 3vmin ; 
+    }
+    .NavElement {
+        height : 3vmin ;  
+        border: 2px solid black ;
+        display: flex;
+        align-items: center ;
+        flex-direction: row ;
+    }
+    .NavSubElement{
+        list-style: none ;
+        padding: 10vmin ;
+        font-size: 2.5vmin ;
+    }
+    .navButton{
+        height : 3vmin ; 
+        width : 4vmin ; 
+        border: 2px solid black ;
+    }
+    .navHam{
+        display: none ;
+    }
+    .textSUbcolor{
+        padding: .5vmin;
+        color:  rgb(6, 141, 194); ;
+    }
 }
 /*--- End of Large Screen code ---*/
 /*--- For Very Large laptop screens (Ex:- Large Dell Latitude Screens,Macbook Pro)---*/
 @media(min-width:1728px) and (max-width:2047px){
-      
+    .navHam{
+        display: none ;
+    }
 }
 
 /*--- For XX Large screens (Ex:- TVs,IMacs...)---*/
@@ -291,6 +497,52 @@
     .bannerRightText{
         height:70vmin;
         width:80vmin;
+    }
+    .nav-box{
+        /* width : 225vmin ; */
+         height: 5vmin ;  
+        border: 2px solid black ;
+        display: flex;
+        justify-content: space-between ;
+        align-items: center ;
+        flex-wrap: wrap ;
+
+    }
+    .brandTextName{
+        /* height : 3vmin ;  */
+        /* width : 4vmin ;  */
+        border: 2px solid black ;
+        display: flex;
+        text-align: center ;
+        margin-left: 3vmin ;
+
+    }
+    .brandSubTextNAme{
+        font-size: 3vmin ; 
+    }
+    .NavElement {
+        height : 3vmin ;  
+        border: 2px solid black ;
+        display: flex;
+        align-items: center ;
+        flex-direction: row ;
+    }
+    .NavSubElement{
+        list-style: none ;
+        padding: 10vmin ;
+        font-size: 2.5vmin ;
+    }
+    .navButton{
+        height : 3vmin ; 
+        width : 4vmin ; 
+        border: 2px solid black ;
+    }
+    .navHam{
+        display: none ;
+    }
+    .textSUbcolor{
+        padding: .5vmin;
+        color:  rgb(6, 141, 194); ;
     }
 }
 </style>
