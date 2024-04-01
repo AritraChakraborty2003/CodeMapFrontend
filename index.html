@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Basic template</title>
+</head>
+<body>
+   <div class="banner">
+        <div class="bannerLeftImage">
+            <div class="imageHolderBanner">
+                    <img src="coder1.png" alt="" srcset="" class="imgBanner">
+            </div>
+        </div>
+        <div class="bannerRightText">
+            <div class="textHolderBanner">
+                <div class="bannerTitleSlogan">
+                
+                    <div class="line">
+                       
+                    </div>
+                    <div class="sloganMain">
+                        Where ideas transform into innovation
+                    </div>
+                </div>
+        
+            
+                <div class="originalTextBanner">
+                        <div class="originalMainTextBanner">
+                            <p class="bannerMainTextBody">Creating Services For your <span class="bannerSpecial">Startup</span> Business</p>
+                        </div>
+                        <div class="subTextBanner">
+                            <p class="subTextBodyBanner">Amplify your business presence with latest trends and technology with great design by our team.Are you a student join our thriving coding community.Excited?</p>
+                        </div>
+                        <div class="searchBarBannerHolder">
+                            <div class="searchBarBanner">
+                                <input type="text" name="searchBanner" id="searchBanner" class="search" placeholder="Search for your choice...">
+                                <button class="searchBannerButton" id="searchButtonBanner">Get Started</button>
+                            </div>
+                        </div>
+
+                </div>
+             
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+   
+    .bannerTitleSlogan{
+      
+         display: flex;
+         align-items: center;
+    }
+   .banner{
+        width:100vw;
+        display: flex;
+        justify-content: center;
+   
+        flex-wrap: wrap;
+
+    }
+    
+    .border{
+         border: 1px solid black;
+    }
+    
+    .bannerImage{
+        width:90vmin;
+        display: flex; justify-content: center;
+        align-items: center;
+    }
+
+  
+/*New Code*/
+/*Small Device Mobiles*/
+@media(max-width:700px){
+    .bannerLeftImage{
+        height:80vmin;
+        width:85vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bannerRightText{
+        height:85vmin;
+        margin-top: -4vmin;
+        width:85vmin;
+    }
+  
+    .textHolderBanner{
+        height:75vmin;
+        width:85vmin;
+     
+        display: flex;
+        flex-direction: column;
+      
+    }
+    .imageHolderBanner{
+        height:85vmin;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+ 
+        width:85vmin;
+    }
+  
+    .bannerMainTextBody{
+        font-size: 10.5vmin;
+    }
+    .bannerSpecial{
+        color: rgb(6, 141, 194);
+    }
+    .searchBarBanner{
+      height:5vmin;
+      margin-top: 3vmin;
+      display: flex;
+    }
+    .search{
+        width:65vmin;
+    } 
+    .searchBannerButton{
+        width:20vmin;
+        height:6vmin;
+        padding-left: 3vmin;
+        padding-right:3vmin;
+        font-size:2vmin;
+        border:1px solid white;
+        color:white;
+        background-color: rgb(13, 118, 222);
+    }
+    .search{
+        font-size: 2.75vmin;
+        padding:3vmin;
+        border:1px solid lightgray;
+        color:grey;
+    }
+    .sloganMain{
+        margin-left: 2vmin;
+        font-size: 3vmin;
+        color:rgb(42, 154, 198);
+    }
+    .line{
+        height:4px;
+        width:17vmin;
+        background-color: rgb(41, 172, 224)
+    }
+    .subTextBodyBanner{
+        font-size: 2.5vmin;
+        margin-top: 3vmin;
+    }
+    .imgBanner{
+        max-width: 100%;
+        max-height:100%;     
+        object-fit:contain;
+        border-radius: 3vmin;
+    }
+ 
+}
+/*Tab Screens*/
+@media(min-width:701px) and (max-width:900px){
+   
+
+}
+/*---- End for mobile and tab screens ---*/
+
+/*--- For Mini and medium Laptops(13.5eg: macbook-air) */
+@media(min-width:901px) and (max-width:1280px) {
+   
+    @media(max-height:770px) {
+              /*For Lenovo Thinkpad(small X390)*/
+  
+    }
+    @media(min-height:771px) {
+          /*For macbook(13.5 inch screen)*/
+    }
+     
+    }
+
+/*For macbook(13.5inch eg:macbook-air)*/
+/*--- For Mini and medium Laptops(14inch eg: macbook-air) */
+@media(min-width:1281px) and (max-width:1440px){
+   
+}
+
+/*-----End for macbook-air sized laptops(14 inch) ----*/
+
+/*--- For Large laptop screens(15.6inch)(Ex:- HP-Omen)---*/
+@media(min-width:1441px) and (max-width:1727px){
+    .imgBanner{
+        max-width: 100%;
+        max-height:100%;       margin-top:-10vmin;
+        margin-left: -10vmin;
+        object-fit:contain;
+        border-radius: 3vmin;
+    }
+    .bannerLeftImage{
+        height:90vmin;
+        width:90vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bannerRightText{
+        height:90vmin;
+        width:100vmin;
+    }
+    .imageHolderBanner{
+        height:90vmin;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+ 
+        width:90vmin;
+    }
+    .textHolderBanner{
+        height:75vmin;
+        width:100vmin;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+    
+    }
+    .bannerMainTextBody{
+        font-size: 10.5vmin;
+    }
+    .bannerSpecial{
+        color: rgb(6, 141, 194);
+    }
+    .searchBarBanner{
+      height:5vmin;
+      margin-top: 3vmin;
+      display: flex;
+    }
+    .search{
+        width:40vmin;
+    } 
+    .searchBannerButton{
+        width:15vmin;
+        height:5vmin;
+        padding-left: 2vmin;
+        padding-right:2vmin;
+        font-size:2vmin;
+        border:1px solid white;
+        color:white;
+        background-color: rgb(13, 118, 222);
+    }
+    .search{
+        padding:2vmin;
+        border:1px solid lightgray;
+        color:grey;
+    }
+    .sloganMain{
+        margin-left: 2vmin;
+        font-size: 3vmin;
+        color:rgb(42, 154, 198);
+    }
+    .line{
+        height:4px;
+        width:17vmin;
+        background-color: rgb(41, 172, 224)
+    }
+    .subTextBodyBanner{
+        font-size: 2vmin;
+        margin-top: 3vmin;
+    }
+}
+/*--- End of Large Screen code ---*/
+/*--- For Very Large laptop screens (Ex:- Large Dell Latitude Screens,Macbook Pro)---*/
+@media(min-width:1728px) and (max-width:2047px){
+      
+}
+
+/*--- For XX Large screens (Ex:- TVs,IMacs...)---*/
+@media(min-width:2048px){
+   
+    .bannerLeftImage{
+        height:70vmin;
+        width:80vmin;
+    }
+    .bannerRightText{
+        height:70vmin;
+        width:80vmin;
+    }
+}
+</style>
